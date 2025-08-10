@@ -88,14 +88,10 @@ Predictive models based on data and statistics
 <!-- Consolidated README now serves as entrypoint & TOC -->
 # Copilot & GenAI Knowledge Hub
 
-<<<<<<< HEAD
-Curated notes, references, and examples around GitHub Copilot, OpenAI / Azure OpenAI, RAG patterns, governance, evaluation, and broader model ecosystem. Split into modular docs for easier navigation & contribution.
-=======
 ## Introduction to Copilot by Copilot
 Copilot is a new AI-powered coding assistant that helps you write code faster and with fewer bugs. It comes with a plugin or extension and a Chat feature called GitHub Copilot Chat. 
 
 "When using GitHub Copilot Chat, we recommend that you think of yourself as a lead developer who is working with a more junior developer (GitHub Copilot Chat). As the lead developer, it is your responsibility to verify information that is provided by GitHub Copilot Chat and ensure it meets all of your requirements." [Prompting GitHub Copilot Chat to become your personal AI assistant for accessibility] (https://github.blog/developer-skills/github/prompting-github-copilot-chat-to-become-your-personal-ai-assistant-for-accessibility/#foundational-accessibility-prompt)
->>>>>>> 9ef2931da9ec019adb5fc0cb60db9f9ef2a18a47
 
 "Copilot still needs a Pilot" (C) 2023 – still true in 2025.
 
