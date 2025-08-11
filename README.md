@@ -2,7 +2,48 @@
 # README
 This repo is put together to help me document, practice and show examples of how to use Copilot. Along the way, if I find authoritative content on the topic of Generative AI, I will list them here. All content is credited to its respective authors. 
 
-Now, remember folks! "Copilot still needs a Pilot" (C) 2023
+Now, remember folks! "Copilot still needs a Pilot" (C) 2023 – and still true in 2025.
+
+> NOTE: This document started in 2023 and is being incrementally updated with new Copilot, OpenAI, and broader GenAI platform announcements (latest refresh: 2025-08-10). New material is additive; historical context is retained.
+
+## Recent (2024–2025) AI & Copilot Highlights
+Curated headlines to capture major capability shifts. (Reverse‑chronological. Always verify current status—previews/features can change.)
+
+### 2025
+* Continued convergence of Microsoft Copilot experiences across M365, Windows, Security, Azure, GitHub (single brand surface) – ongoing refinements to unified UX and plugin/extension story.
+
+### 2024
+* GitHub Copilot Workspace (preview, Apr 2024): End‑to‑end natural language environment for planning, browsing, editing, and iterating on repo changes with AI assistance. [Citation: product preview announcement / docs – verify latest status]
+* GitHub Copilot Extensions (Build 2024): Partner + service integrations (Azure, Docker, Sentry, DataStax, LaunchDarkly, Pinecone, Stripe, etc.) invoked directly inside Copilot Chat to reduce context‑switching. [1]
+* Copilot+ PCs (May 2024): Windows devices with NPUs (40+ TOPS class) enabling hybrid (local + cloud) AI experiences (Recall preview adjustments, Cocreator, Live Captions translation). [2]
+* GPT‑4o (May 2024): Unified multimodal (text / vision / audio) flagship model with lower latency & cost vs GPT‑4 Turbo; GPT‑4o mini introduced for cost‑efficient tasks. [3]
+* Structured output & function/tool calling: Stable JSON / schema constrained responses, improved function calling semantics in OpenAI & Azure OpenAI. [4][5]
+* Safety & policy refresh: Updated unified usage / safety policies & risk scorecards; expanded red‑teaming & modality guardrails. [6][3]
+* Pricing & embeddings refresh: Adjusted pricing tiers; newer embedding families optimized for retrieval + reranking; cost reductions for lightweight reasoning. [7]
+* RAG maturation: OSS frameworks (Semantic Kernel, LangChain) added richer memory abstractions, orchestration, evaluators, multi‑agent & tool integration patterns. [8][9]
+* Azure OpenAI platform growth: Added GPT‑4 Turbo with Vision & GPT‑4o family plus expanded regional deployments & higher throughput tiers (see official Azure OpenAI release notes / docs). [Placeholder]
+* Enterprise Copilot governance: Expanded policy controls (content filters, reference sources, telemetry), privacy enhancements, and trust center transparency for Chat suggestions & enterprise data boundaries. [10]
+* GitHub Copilot Enterprise: Org knowledge integration (docs + code), central policy management, audit & reference features to reduce IP risk. [10]
+
+#### 2024 Source Footnotes
+1. GitHub Copilot Extensions announcement (May 2024) – https://github.blog/news-insights/product-news/introducing-github-copilot-extensions/
+2. Copilot+ PCs launch (May 20 2024) – https://blogs.microsoft.com/blog/2024/05/20/introducing-copilot-pcs/
+3. GPT‑4o launch (May 2024) – https://openai.com/index/hello-gpt-4o
+4. JSON / structured output mode – https://platform.openai.com/docs/guides/text-generation/json-mode
+5. Function (tool) calling – https://platform.openai.com/docs/guides/function-calling
+6. OpenAI Usage / Safety policies & risk frameworks – https://openai.com/policies/usage-policies
+7. OpenAI Pricing & model families – https://openai.com/pricing
+8. Semantic Kernel – https://github.com/microsoft/semantic-kernel & https://learn.microsoft.com/en-us/semantic-kernel/
+9. LangChain – https://langchain.com/
+10. GitHub Copilot Trust Center – https://resources.github.com/copilot-trust-center/
+
+### Tracking Model Lifecycle
+Older / legacy OpenAI model variants scheduled for retirement in 2024 were superseded by GPT‑4 Turbo / GPT‑4o families and lighter mini models. Always consult official model deprecation schedules before pinning a version.
+
+### Why These Matter
+Themes: Lower latency, multimodality, ecosystem extensibility (extensions / plugins), responsible AI controls, hybrid (local + cloud) inference, and workflow integration (Workspace, Enterprise knowledge).
+
+---
 
 ## A bit of History
 AI > ML > DL > GI
@@ -44,67 +85,68 @@ Predictive models based on data and statistics
 - Accountable
 
 ## OpenAI + Microsoft Offerings
-* Generative pre-trained transformer (GPT): GPT (generate and understand text)
-* Codex: (based off of GPT and are optimized to generate and understand code)
-* Dall-E: (generate images from text prompts)
-* Embeddings: (a special format of data representation that can be easily utilized by machine learning models and algorithms)
+<!-- Consolidated README now serves as entrypoint & TOC -->
+# Copilot & GenAI Knowledge Hub
 
 ## Introduction to Copilot by Copilot
 Copilot is a new AI-powered coding assistant that helps you write code faster and with fewer bugs. It comes with a plugin or extension and a Chat feature called GitHub Copilot Chat. 
 
 "When using GitHub Copilot Chat, we recommend that you think of yourself as a lead developer who is working with a more junior developer (GitHub Copilot Chat). As the lead developer, it is your responsibility to verify information that is provided by GitHub Copilot Chat and ensure it meets all of your requirements." [Prompting GitHub Copilot Chat to become your personal AI assistant for accessibility] (https://github.blog/developer-skills/github/prompting-github-copilot-chat-to-become-your-personal-ai-assistant-for-accessibility/#foundational-accessibility-prompt)
 
-You can receive suggestions from GitHub Copilot either by starting to write the code you want to use, or by writing a natural language comment describing what you want the code to do.
+"Copilot still needs a Pilot" (C) 2023 – still true in 2025.
 
-Trained on billions of lines of public code, GitHub Copilot puts the knowledge customers need at their fingertips, saving time and maintaining focus.
+> This hub began in 2023. Latest refresh: 2025-08-10. Historical context preserved in archive files and repo history.
 
-Although it supports most programming languages, it currently works the best with
-* Python
-* JavaScript
-* TypeScript
-* Ruby
-* Go
+## Quick Start
+1. Skim Latest Highlights
+2. Pick a topic from the Table of Contents
+3. Open related code sample (see root language files) & experiment with prompts
+4. Contribute improvements (see CONTRIBUTING-NOTES)
 
-## Value Prop of Github Copilot
-GitHub Copilot helps developers code faster, focus on solving bigger problems. 
+## Table of Contents
+- [highlights-2024-2025](./docs/highlights-2024-2025.md)
+- [history](./docs/history.md)
+- [responsible-ai-principles](./docs/responsible-ai-principles.md)
+- [offerings](./docs/offerings.md)
+- [introduction-to-copilot](./docs/introduction-to-copilot.md)
+- [value-prop-use-cases](./docs/value-prop-use-cases.md)
+- [developer-scenarios-formula](./docs/developer-scenarios-formula.md)
+- [supported-ides](./docs/supported-ides.md)
+- [how-it-works](./docs/how-it-works.md)
+- [getting-started-steps](./docs/getting-started-steps.md)
+- [behind-the-scenes](./docs/behind-the-scenes.md)
+- [example-apps](./docs/example-apps.md)
+- [announcements-archive](./docs/announcements-archive.md)
+- [links-and-resources](./docs/links-and-resources.md)
+- [language-models-reading](./docs/language-models-reading.md)
+- [tutorials-and-accelerators](./docs/tutorials-and-accelerators.md)
+- [demos](./docs/demos.md)
+- [bing-and-designer](./docs/bing-and-designer.md)
+- [privacy-security-governance](./docs/privacy-security-governance.md)
+- [articles](./docs/articles.md)
+- [ai-compute-articles](./docs/ai-compute-articles.md)
+- [research-firms](./docs/research-firms.md)
+- [c-suite-perspectives](./docs/c-suite-perspectives.md)
+- [certifications](./docs/certifications.md)
+- [hello-world-examples](./docs/hello-world-examples.md)
+- [lessons-learned](./docs/lessons-learned.md)
+- [enterprise-governance](./docs/enterprise-governance.md)
+- [rag-architecture](./docs/rag-architecture.md)
+- [model-evaluation](./docs/model-evaluation.md)
+- [model-landscape-2025](./docs/model-landscape-2025.md)
+- [openai-azure-models](./docs/openai-azure-models.md)
+- [CONTRIBUTING-NOTES](./docs/CONTRIBUTING-NOTES.md)
 
-- 96% faster with repetitive tasks
-- 88% feel more productive
-- 74% focus on more satisfying work
+## Contributing
+See [docs/CONTRIBUTING-NOTES.md](./docs/CONTRIBUTING-NOTES.md). Submit PRs with focused changes; keep sections decoupled.
 
-### Copilot Use Cases
-* Find new solutions - Cycle through suggestions and discover a different path.
-* Solve big problems - Spend less time on boilerplate and repetitive code patterns and more time on building great software.
-* Explore new frameworks - Navigate unfamiliar languages, frameworks, and libraries with ease
+## License & Notices
+Content: Creative Commons Attribution 4.0 (see LICENSE). Code: MIT (see LICENSE-CODE). Trademarks belong to their respective owners. Privacy: https://privacy.microsoft.com/en-us/
 
-### User Stories: I as a Developer want to... so that... 
-1. I want to write code faster so that I can focus on solving bigger problems
-2. I want to write code with fewer bugs so that I can focus on solving bigger problems
-3. I want to write code with fewer errors so that I can focus on solving bigger problems
-4. ... LOL. The above was written by my Copilot. I am not sure if I should be happy or sad.
-
-### As a Developer
-1. You are asked to create a new App
-2. You are asked to create a new API
-3. You are asked to modify an existing application
-4. You are asked to fix a bug
-
-Your next steps might be to gather requriements, work on a high level design, produce a POC or MVP. And when you start to write code, you may copy/paste, you may search and query for best results and code samples, etc. Copilot can help you do it all in one place. 
-
-### The Formula
-Let's say the scenario is: "I want to build a web app that connects to a sql database and has an todo item api and then I want to deploy this app to Azure". Imagine now, with [Copilot, Copilot Labs, Copilot-X, Copilot CLI] *or which ever combination or product term we may end up with* I can do all of that from one IDE. 
-
-1. Context. Context. Context.
-2. Well written natural language comments (in a code file) or prompts.
-3. Multiple tabs open in the IDE with code files related to the work you are doing.
-
-## Copilot Supported IDEs
-Copilot supports the following IDEs:
-
-* Visual Studio
-* Visual Studio Code
-* JetBrains
+---
+Generated TOC script: scripts/update-toc.ps1 (PowerShell) – run after adding new docs.
 * NeoVim
+
 * GitHub Codespaces
 * GitHub Copilot Workspace
 * Apple Xcode
@@ -139,10 +181,6 @@ GitHub Copilot is powered by OpenAI Codex from https://openai.com/
 - [Copilot Chat](https://learn.microsoft.com/en-us/semantic-kernel/samples-and-solutions/copilot-chat)
 
 ## Public Announcements
-* [Introducing GPT-4o: OpenAI new flagship multimodal model now in preview on Azure](https://azure.microsoft.com/en-us/blog/introducing-gpt-4o-openais-new-flagship-multimodal-model-now-in-preview-on-azure/)
-
-* [GitHub Copilot Workspace](https://github.blog/2024-04-29-github-copilot-workspace/)
-
 * [Microsoft Copilot for Azure. Article date. 11/15/2023](https://techcommunity.microsoft.com/t5/azure-infrastructure-blog/simplify-it-management-with-microsoft-copilot-for-azure-save/ba-p/3981106)
 
 * [Analyze, estimate and optimize cloud costs using Microsoft Copilot for Azure (preview). Article date. 11/21/2023](https://learn.microsoft.com/en-us/azure/copilot/analyze-cost-management)
@@ -219,7 +257,6 @@ GitHub Copilot is powered by OpenAI Codex from https://openai.com/
 
 ## OpenAI Demos
 * [OpenAI Codex Live Demo](https://youtu.be/SGUCcjHTmGY)
-* [OpenAI GPT-4o](https://openai.com/index/hello-gpt-4o/)
 
 ## Community Demos
 * [Using Copilot Chat to fix vulnerability discovered by GitHub Advanced Security](https://www.youtube.com/watch?v=ljVTvV9MqFE)
